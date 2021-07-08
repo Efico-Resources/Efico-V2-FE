@@ -1,0 +1,37 @@
+
+
+
+.nav-item{
+	padding: 1.2em;
+	color: white;
+	font-weight: bold;
+	margin-right: 1.2em;
+}
+.nav-item:hover{
+	transform: scale(1.07);
+	color: yellow;
+	
+}
+.fa-bars{
+	color: white;
+}
+
+
+.navbar{
+	background: #710193;
+	
+}
+.nav-link{
+	color: white;
+}
+.navbar .nav-link:hover{
+	color: yellow;
+}
+
+
+@media (max-width: 800px){
+	img{
+		max-width: 120px !important;
+	}
+
+}
