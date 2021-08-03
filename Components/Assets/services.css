@@ -14,12 +14,19 @@
 
 .Header{
   position: relative;
-  height: 1024px;
-  background: rgba(0, 0, 0, 0.48);
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(0,0,0,0.48),
+    rgba(0,0,0,0.48)
+  ), url('./service-page-image/service.jpg');
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+   
 }
 
 .Header h1{
-    font-size: 53.41px;
+    font-size: 53.41px; 
 }
 
 .Header p{
@@ -58,11 +65,11 @@ a{
     color: #fff;
 }
 
-/**Media query for max screen size 400px**/
-@media (max-width:400px) {
+/**Media query for max screen size 320 and 480px**/
+@media only screen and (max-width:320px) and (max-width:480px) {
     .Header{
         position: relative;
-        height: 500px;
+        height: 100vh;
       }
 
     .Header h1{
@@ -70,8 +77,8 @@ a{
     }
     
     .Header p{
-        font-size: 14.8px;
-        line-height: 14px;
+        font-size: 2.8px !important;
+        line-height: 14px !important;
     }  
 
     .Self-Assessment h1, .Training h1, .Writing h1, .Affiliate h1, .Business h1{
@@ -84,10 +91,10 @@ a{
 }
 
 
-/**Media query for max screen size 768px**/
-@media (max-width:768px) {
+/**Media query for max screen size 768px and 1024px**/
+@media only screen and (max-width:768px) and (max-width:1024px) {
     .Header{
-        height: 600px;
+        height: 100vh;
       }
 
     .Header h1{
@@ -95,8 +102,8 @@ a{
     }
     
     .Header p{
-        font-size: 14.8px;
-        line-height: 14px;
+        font-size: 18.8px !important;
+        line-height: 24px !important;
     }  
 
     .Self-Assessment h1, .Training h1, .Writing h1, .Affiliate h1, .Business h1{
@@ -107,4 +114,6 @@ a{
         font-size: 16.8px;
     }
 }
+
+
 
